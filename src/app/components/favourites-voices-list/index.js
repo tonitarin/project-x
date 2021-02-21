@@ -1,0 +1,1 @@
+export { FavouritesVoicesList } from './FavouritesVoicesList'

@@ -1,0 +1,44 @@
+.searchbox {
+  position: relative;
+}
+
+.searchbox__input {
+  color: var(--white);
+  height: 32px;
+  width: 243px;
+  border: none;
+  border-radius: 18px;
+  background: url('./assets/search.svg') no-repeat, black;
+  padding-left: 32px;
+  font-family: 'Barlow';
+  font-size: 16px;
+}
+
+.searchbox__input::placeholder {
+  color: transparent;
+}
+
+.searchbox__input:focus {
+  outline: none;
+  border: none;
+}
+
+.searchbox__input:focus::placeholder {
+  color: var(--white);
+}
+
+.searchbox__button {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: url('./assets/search-close.svg') no-repeat center;
+  align-self: center;
+}
+
+.searchbox__button:focus {
+  outline: none;
+  border: none;
+}

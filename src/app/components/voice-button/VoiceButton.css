@@ -1,0 +1,74 @@
+.voice-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 110px;
+}
+
+.voice-button:focus {
+  outline: none;
+  border: none;
+}
+
+.voice-button__icon {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.voice-button__icon--no-selected {
+  background-color: var(--white);
+}
+
+.voice-button__icon--selected {
+  background: linear-gradient(225deg, var(--blue-gradient-init) 0%, var(--blue-gradient-finish) 100%);
+}
+
+.voice-button__title {
+  color: var(--white);
+  font-family: 'Barlow bold';
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.voice-button__title--no-selected {
+  color: var(--white);
+}
+
+.voice-button__title--selected {
+  color: var(--light-blue);
+}
+
+.voice-button:hover
+.voice-button__selection-heart--off {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url('./assets/voice-favourite-off.svg') no-repeat center, var(--white);
+}
+
+.voice-button:hover
+.voice-button__selection-heart--on {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url('./assets/voice-favourite.svg') no-repeat center, var(--white);
+}
