@@ -58,7 +58,7 @@ const Header = ({ setProVoices, proVoices, handleRandomSelection }) => {
     setProVoices(voices)
   }
 
-  const uniqueCategories = Voices.uniqueCategories(voices)
+  const uniqueCategories = ['All', ...Voices.uniqueCategories(voices)]
 
   const sortProVoices = (selectedOption) => {
     const unsortedProVoices = [...proVoices]
